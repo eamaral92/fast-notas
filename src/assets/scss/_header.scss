@@ -1,11 +1,14 @@
 #header-container {  
   height: 115px;
+  transition: all 0.5s linear;
   #brand {
     width: 200px;
+    transition: all 0.1s linear;
   }
 
   .navbar-collapse {
     margin-top: 30px;
+    transition: all 0.5s linear;
     li {
       a {
         color: $black;
@@ -27,7 +30,7 @@
   }
 
   @media(max-width: 768px){
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: $mystic; 
     .navbar-nav {
       margin: 0;
       width: 100%;
@@ -45,8 +48,20 @@
     }
     .navbar-collapse {
       box-shadow: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      margin-top: 65px!important;
+      background-color: $mystic;
+      margin-top: 65px!important;      
     }
+  }
+}
+
+.header-bg {
+  background-color: $mystic;
+  height: 80px!important;
+  .navbar-collapse {
+    margin-top: 15px!important;
+  }
+
+  #brand {
+    width: 150px!important;
   }
 }
