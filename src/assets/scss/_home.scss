@@ -1,0 +1,76 @@
+.header-home {
+  height: 90vh; 
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-color: #E8EDF2;
+  position: relative;
+  @media (max-width: 992px) {
+    display: block;
+    .text-intro {
+      margin-top: 115px;
+    }
+  }
+  @media (max-width: 450px) {
+    display: flex;
+  }
+  .img-home{    
+    max-width: 50vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @media (max-width: 1024px) {
+      max-width: 470px;
+    }
+
+    @media (max-width: 742px) {
+      max-width: 370px;
+    }
+
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+
+}
+
+.clientes {
+  background-color: #e6e6e6;
+  padding-bottom: 5px; 
+  padding-top: 5px;
+  .logos {
+    max-width: 160px;
+    width: 100%;
+  }
+}
+
+.emissao {
+  background-color: #fff;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  .icons {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-bottom: 70px;
+  }
+
+  h3 {
+    color: $green;
+  }
+
+  p {
+    color: $gray;
+    max-width: 265px;
+    display: block;
+    margin: 0 auto;
+  }
+}

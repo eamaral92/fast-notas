@@ -1,0 +1,52 @@
+#header-container {  
+  height: 115px;
+  #brand {
+    width: 200px;
+  }
+
+  .navbar-collapse {
+    margin-top: 30px;
+    li {
+      a {
+        color: $black;
+        &:hover {
+          background-color: transparent;
+          color: $green;
+        }
+      }
+    }
+    a.button {
+      line-height: 10px;
+      width: 170px;
+      margin-top: 5px;      
+    }
+  }
+
+  .icon-bar {
+    background-color: $green;
+  }
+
+  @media(max-width: 768px){
+    background-color: rgba(0, 0, 0, 0.8); 
+    .navbar-nav {
+      margin: 0;
+      width: 100%;
+      padding-bottom: 20px;
+      li {
+        a { 
+          color: $green;
+        }
+      }
+    }
+    #navbar {
+      a.button {
+        line-height: 18px;
+      }
+    }
+    .navbar-collapse {
+      box-shadow: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-top: 65px!important;
+    }
+  }
+}
