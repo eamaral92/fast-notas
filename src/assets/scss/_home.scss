@@ -5,17 +5,23 @@
   align-items: center;
   background-color: #E8EDF2;
   position: relative;
+  .text-intro {
+    p {
+      margin-bottom: 50px;
+      margin-top: 30px;
+    }
+  }
   @media (max-width: 992px) {
     display: block;
     .text-intro {
-      margin-top: 115px;
+      margin-top: 115px;      
     }
   }
   @media (max-width: 450px) {
     display: flex;
   }
   .img-home{    
-    max-width: 50vw;
+    max-width: 46vw;
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
@@ -69,9 +75,80 @@
     display: block;
     margin: 0 auto;
   }
-  
-  .API {
 
+}
+
+.api {
+  h2 {
+    margin-bottom: 15px;
   }
+  
+  p {
+    margin-bottom: 50px;
+    color: $gray;
+  }
+}
 
+.itens-api {
+  margin-bottom: 30px;
+  .img-item {
+    float: left;
+    margin-right: 15px;
+    display: flex;
+    margin-top: 5px;    
+  }
+}
+
+.citys {
+  .text-city {
+    h2 {
+      margin-top: 45px;
+    }
+    p {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+.business {
+  h2 {
+    margin-bottom: 30px!important;
+  }
+}
+
+// Slick
+
+.item-carrousel {
+  padding: 50px;
+  h3 {
+    color: $green;    
+  }
+  small {
+    display: block;
+    margin-bottom: 30px;
+  }
+  p {
+    color: $gray;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 25%;
+  // content: ">";
+  // height: 50px;
+  // width: 50px;
+  z-index: 1;
+  background: transparent;
+  border: none;
+  font-size: 42px;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
 }
