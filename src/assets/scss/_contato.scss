@@ -5,11 +5,63 @@
 .ajust-padding {
 	padding: 0!important;
 }
+@media (min-width: 768px) {
+  .adjust-padding-right{
+    padding-right: 0!important;
+  }
+  .adjust-padding-left{
+    padding-left: 0!important;
+  }
+}
+
+// 
+.duvidas {
+  .single-duvida{
+    border-bottom: 1px solid #cbcbcb;
+    padding-bottom: 20px;
+    h2 {
+      margin-bottom: 35px!important;
+    }
+    
+    h3 {    
+      font-weight: 600;
+    }
+
+    h3, p {
+      color: $gray;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    a {
+      color: $green;
+      font-size: 12px;
+      text-transform: lowercase;
+    }
+    
+    small {
+      font-size: 12px;
+      color: $gray;
+    }
+
+  }
+}
 
 // Cadastro
 
 .itens-cadastro {
 	margin-top: 40px;
+  @media (max-width: 468px){
+    .itens-api {
+      font-size: 10px;
+      .img-item {
+        margin-right: 5px;
+      }
+    }
+  }
 }
 
 .ajust-form {
@@ -17,10 +69,52 @@
 }
 
 // Obrigado
-
+.obrigado-header {
+  margin-top: 115px;
+  p {
+    color: $gray;
+  }
+}
 .stipe-thanks {
 	background-color: #bdf4e9;
 	padding: 5px;
+  a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+    color: $green;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+      color: #19a287;
+    }
+  }
+
+  span.tel {
+    margin-left: 60px;
+    display: inline-block;
+    font-size: 12px;
+    color: $green;
+    @media (max-width: 408px) {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    img {
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 408px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
 
 // Forms 
@@ -30,13 +124,15 @@
 		font-weight: normal;
 		text-transform: uppercase;
 		font-size: 12px;
-		color: $dark-gray;
+		color: $gray;
 		margin-bottom: 10px;
 	}
 
-  input, select {
+  input, select, textarea{
     padding: 15px 10px;
     font-size: 12px;
+    border-color: #d4d9e2;
+    border-radius: 1px;
   }
 
   select {

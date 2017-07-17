@@ -1,11 +1,26 @@
 .site-footer {
-  height: 61px;
+  padding: 20px;
   background-color: $dark-blue;
   margin-top: 40px;
   color: #fff;
-  position: relative;
+  position: relative; 
   p {
     font-size: 14px;
     display: inline;
   }
+  .reserved{
+    float: left;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+  .links{
+    float: right;
+  }
+  @media (max-width: 768px) {
+    .reserved, .links {
+      float: none;
+    }
+  }
+
 }

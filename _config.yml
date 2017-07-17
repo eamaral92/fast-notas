@@ -1,7 +1,7 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
 title: FastNotas
-description: Static page for Vindi company
+description:
 url: http://teste.eri.br
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
