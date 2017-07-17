@@ -133,6 +133,9 @@
     font-size: 12px;
     border-color: #d4d9e2;
     border-radius: 1px;
+    &:focus {
+      outline: none!important;
+    }
   }
 
   select {
@@ -142,5 +145,38 @@
   input[type="checkbox"] {
     background-color: transparent!important;
   }
+  
+  .custom-select {
+    border: 1px solid #d4d9e2;
+    overflow: hidden;
+    border-radius: 1px;    
+    position: relative;
+    margin-bottom: 25px;
+    select {
+      border: none;
+      box-shadow: none;
+      background: transparent;
+      background-image: none;
+      -webkit-appearance: none;
+      color: $gray;
+    }
+    &:after {
+      background-image: url(../images/arrow-down.png);
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      display: block;
+      right: 10px;
+      bottom: 15px;
+    }
+  }
 
+}
+
+.ajust-form {
+  display: flex;
+  align-items: center;
 }

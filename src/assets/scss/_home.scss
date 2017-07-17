@@ -130,6 +130,16 @@
   h2 {
     margin-bottom: 30px!important;
   }
+  
+  .potencialize {
+    a {
+      @media (max-width: 768px) {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+
 }
 
 // Slick
@@ -150,14 +160,13 @@
 
 .slick-arrow {
   position: absolute;
-  top: 25%;
-  // content: ">";
-  // height: 50px;
-  // width: 50px;
   z-index: 1;
   background: transparent;
   border: none;
   font-size: 42px;
+  bottom: 35%;
+  color: $gray;
+  font-weight: 300;
 }
 
 .slick-next {
