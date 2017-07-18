@@ -14,11 +14,27 @@
   }
 }
 
-// 
+// Duvidas
+.content-duvidas {
+  margin-top: 0;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+  &:first-child {
+    margin-top: 30px;
+  }
+  &:last-child {
+    .single-duvida {
+      border-bottom: none;
+    }
+  }
+}
+
 .duvidas {
   .single-duvida{
     border-bottom: 1px solid #cbcbcb;
-    padding-bottom: 20px;
+    padding-bottom: 20px;    
     h2 {
       margin-bottom: 35px!important;
     }
