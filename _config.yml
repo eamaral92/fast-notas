@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: FastNotas
 description:
-url: http://teste.eri.br
+url: 
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/src
@@ -14,7 +14,7 @@ exclude: ['assets']
 # NOTE: Don't use @ in front of your Twitter username
 author:
   name: Erick
-  email: erickdsamral@gmail.com
+  email: 
   uri: 
   bio: 
   twitter:
@@ -50,3 +50,6 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-redirect-from
+
+gist:
+  noscript: false
